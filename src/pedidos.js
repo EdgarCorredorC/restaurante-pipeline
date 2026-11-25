@@ -7,7 +7,7 @@ function calcularTotal(items) {
     if (!item.plato || item.cantidad < 1 || item.precio < 0) {
       throw new Error('Ítem inválido');
     }
-    return total + item.cantidad + item.precio;
+    return total + item.cantidad * item.precio;
   }, 0);
 }
 
